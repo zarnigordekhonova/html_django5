@@ -1,0 +1,12 @@
+<title>Home Page</title>
+
+<h1>Home Page</h1><br>
+
+<h3>Types</h3><br>
+
+<body>
+{% for i in type %}
+<a href="{% url 'get_products' i.pk %}" >{{ i.name }}</a><br>
+{% endfor %}
+
+</body>
